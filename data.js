@@ -6,7 +6,7 @@ const cards = [
     name: "The Fool",
     oc: "Blanquet Wallace",
 
-    image: "images/00_the_fool.png",
+    image: "images/00_the_fool.webp",
 
     upright: [
       "Beginnings",
@@ -33,7 +33,7 @@ const cards = [
     name: "The Magician",
     oc: "Orin Ziskind",
     
-    image: "images/01_the_magician.png",
+    image: "images/01_the_magician.webp",
 
     upright: [
         "Willpower",
@@ -60,7 +60,7 @@ const cards = [
     name: "The High Priestess",
     oc: "Vayu Maheswari",
 
-    image: "images/02_the_high_priestess.png",
+    image: "images/02_the_high_priestess.webp",
 
     upright: [
       " ",
@@ -87,7 +87,7 @@ const cards = [
     name: "The Empress",
     oc: "Myrh Bakshi",
 
-    image: "images/03_the_empress.png",
+    image: "images/03_the_empress.webp",
 
     upright: [
       "Prosperity",
@@ -114,7 +114,7 @@ const cards = [
     name: "The Emperor",
     oc: "Isarius vur Yvea",
 
-    image: "images/04_the_emperor.png",
+    image: "images/04_the_emperor.webp",
 
     upright: [
       "Authority",
@@ -129,7 +129,7 @@ const cards = [
     ],
 
     description:
-    "The Emperor is represented Isarius seated on a throne as the hands of his predecessor, the owl crowns him in the blood of their past and the weight of their history before it fades into evanescence. Behind him is a stained glass, reflecting the future of an bright illustrious rule as he breathes in new life for his Kingdom, one marked by wisdom, leadership and finding new meanings to strength.",
+    "The Emperor is represented by Isarius seated on a throne as the hands of his predecessor, the owl crowns him in the blood of their past and the weight of their history before it fades into evanescence. Behind him is a stained glass, reflecting the future of an bright illustrious rule as he breathes in new life for his Kingdom, one marked by wisdom, leadership and finding new meanings to strength.",
 
     artist:
     "© terraru & yaocchi"
@@ -141,7 +141,7 @@ const cards = [
     name: "The Hierophant",
     oc: "Constantine",
 
-    image: "images/05_the_hierophant.png",
+    image: "images/05_the_hierophant.webp",
 
     upright: [
       "Wisdom",
@@ -168,7 +168,7 @@ const cards = [
     name: "The Lovers",
     oc: "Seyren Anand",
 
-    image: "images/06_the_lovers.png",
+    image: "images/06_the_lovers.webp",
 
     upright: [
       "Love",
@@ -195,7 +195,7 @@ const cards = [
     name: "The Chariot",
     oc: "Anleifr Crocus Alcott",
 
-    image: "images/07_the_chariot.png",
+    image: "images/07_the_chariot.webp",
 
     upright: [
       "Direction",
@@ -222,7 +222,7 @@ const cards = [
     name: "Strength",
     oc: "Lancelot",
 
-    image: "images/08_strength.png",
+    image: "images/08_strength.webp",
 
     upright: [
       "Inner Strength",
@@ -249,7 +249,7 @@ const cards = [
     name: "The Hermit",
     oc: "Vincent Emerson",
 
-    image: "images/09_the_hermit.png",
+    image: "images/09_the_hermit.webp",
 
     upright: [
       "Reflection",
@@ -277,7 +277,7 @@ const cards = [
     name: "Wheel of Fortune",
     oc: "Chetandaya Gujarati",
 
-    image: "images/10_wheel_of_fortune.png",
+    image: "images/10_wheel_of_fortune.webp",
 
     upright: [
       "Cycles",
@@ -306,7 +306,7 @@ const cards = [
     name: "Justice",
     oc: "Maeryn Varaleth",
 
-    image: "images/11_justice.png",
+    image: "images/11_justice.webp",
 
     upright: [
       "Fairness",
@@ -333,7 +333,7 @@ const cards = [
     name: "The Hanged Man",
     oc: "Cotton Silke",
 
-    image: "images/12_the_hanged_man.png",
+    image: "images/12_the_hanged_man.webp",
 
     upright: [
       "Sacrifice",
@@ -360,7 +360,7 @@ const cards = [
     name: "Death",
     oc: "Meena Vaishant",
 
-    image: "images/13_death.png",
+    image: "images/13_death.webp",
 
     upright: [
       "Impermanence",
@@ -387,7 +387,7 @@ const cards = [
     name: "Temperance",
     oc: "Jonah Branford",
 
-    image: "images/14_temperance.png",
+    image: "images/14_temperance.webp",
 
     upright: [
       "Peace",
@@ -413,7 +413,7 @@ const cards = [
     name: "The Devil",
     oc: "Lyco Zahrani",
 
-    image: "images/15_the_devil.png",
+    image: "images/15_the_devil.webp",
 
     upright: [
       "Obsession",
@@ -440,7 +440,7 @@ const cards = [
     name: "The Tower",
     oc: "Sibylle Mishra",
 
-    image: "images/16_the_tower.png",
+    image: "images/16_the_tower.webp",
 
     upright: [
       "Chaos",
@@ -467,7 +467,7 @@ const cards = [
     name: "The Star",
     oc: "Nima Joshi",
 
-    image: "images/17_the_star.png",
+    image: "images/17_the_star.webp",
 
     upright: [
       "Hope",
@@ -494,7 +494,7 @@ const cards = [
     name: "The Moon",
     oc: "Anastasya Roszhart",
 
-    image: "images/18_the_moon.png",
+    image: "images/18_the_moon.webp",
 
     upright: [
       "Illusion",
@@ -521,7 +521,7 @@ const cards = [
     name: "The Sun",
     oc: "Eirwen Craobh",
 
-    image: "images/19_the_sun.png",
+    image: "images/19_the_sun.webp",
 
     upright: [
       "Happiness",
@@ -548,7 +548,7 @@ const cards = [
     name: "Judgement",
     oc: "Ezekiehl Mattias Ariacroix",
 
-    image: "images/20_judgement.png",
+    image: "images/20_judgement.webp",
 
     upright: [
       "Reflection",
@@ -575,7 +575,7 @@ const cards = [
     name: "The World",
     oc: "Lorelei",
 
-    image: "images/21_the_world.png",
+    image: "images/21_the_world.webp",
 
     upright: [
       " ",
@@ -602,7 +602,7 @@ const cards = [
     name: "King of Cups",
     oc: "Linden Wieland",
 
-    image: "images/king_of_cups.png",
+    image: "images/king_of_cups.webp",
 
     upright: [
       "Devotion",
@@ -629,7 +629,7 @@ const cards = [
     name: "Seven of Cups",
     oc: "Anthelm",
 
-    image: "images/seven_of_cups.png",
+    image: "images/seven_of_cups.webp",
 
     upright: [
       "Choices",
@@ -656,7 +656,7 @@ const cards = [
     name: "Ace of Cups",
     oc: "Eden",
 
-    image: "images/ace_of_cups.png",
+    image: "images/ace_of_cups.webp",
 
     upright: [
       "Love",
@@ -683,7 +683,7 @@ const cards = [
     name: "King of Swords",
     oc: "Azriel Ariacroix",
 
-    image: "images/king_of_swords.png",
+    image: "images/king_of_swords.webp",
 
     upright: [
       "Reason",
@@ -710,7 +710,7 @@ const cards = [
     name: "Knight of Swords",
     oc: "Nerine Rosfelt",
 
-    image: "images/knight_of_swords.png",
+    image: "images/knight_of_swords.webp",
 
     upright: [
       "Bravery",
