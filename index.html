@@ -13,10 +13,23 @@ rel="stylesheet">
 </head>
 
 <body>
+
 <div id="intro">
-  <h1 id="intro-text">
-    In every end, there is also a beginning.
-  </h1>
+
+  <div class="intro-content">
+
+    <h1 id="intro-text">
+      In every end, there is also a beginning.
+    </h1>
+
+    <div class="loading-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
 </div>
 
   <div id="gallery-content">
@@ -110,16 +123,28 @@ rel="stylesheet">
 </audio>
 
 <script>
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
 
   const intro =
     document.getElementById("intro");
 
-  setTimeout(() => {
+  const introText =
+    document.getElementById("intro-text");
 
-    intro.classList.add("fade-out");
+  const bgm =
+    document.getElementById("bgm");
 
-  }, 4000);
+  await new Promise(resolve =>
+    setTimeout(resolve, 4200)
+  );
+
+  bgm.load();
+
+  await new Promise(resolve =>
+    setTimeout(resolve, 800)
+  );
+
+  intro.classList.add("fade-out");
 
 });
 </script>
