@@ -263,9 +263,8 @@ const cards = [
       "Lost Direction"
     ],
 
-    description: [
-    "Symbolism: Wisteria (Background) -- Wisdom & contemplation / Deer -- Inner guidance & intuition / Wooden Staff -- Support & guidance through one's journey / Cloak -- Solitude & self-reflection / Scroll -- Knowledge & seeking truth"
-    ],
+    description:
+    "Symbolism: Wisteria (Background) -- Wisdom & contemplation / Deer -- Inner guidance & intuition / Wooden Staff -- Support & guidance through one's journey / Cloak -- Solitude & self-reflection / Scroll -- Knowledge & seeking truth",
 
     artist:
     "© zeonxeria"
@@ -291,13 +290,11 @@ const cards = [
       "Unwelcome Changes"
     ],
 
-    description: [
-      " "
-    ],
+    description: 
+      " ",
 
-    artist: [
+    artist:
     "© straightyaoi"
-    ],
   },
 
   {
