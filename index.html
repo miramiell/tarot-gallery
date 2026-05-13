@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>White Noon Tarot Project</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+  <header>
+    <h1>Major Arcana</h1>
+  </header>
+
+  <main>
+    <div id="gallery" class="gallery"></div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+
+    <div class="modal-content fade-in">
+
+      <button class="close-btn" onclick="closeModal()">×</button>
+
+      <button class="nav-btn prev-btn" onclick="previousCard()">‹</button>
+      <button class="nav-btn next-btn" onclick="nextCard()">›</button>
+
+      <div class="modal-layout">
+
+        <div class="modal-image">
+            <img id="modal-card-image" src="">
+        </div>
+
+        <div class="modal-text">
+
+          <h1 id="modal-title"></h1>
+
+          <h2>Upright Meaning</h2>
+          <div id="upright-tags" class="tags"></div>
+
+          <h2>Reversal Meaning</h2>
+          <div id="reversal-tags" class="tags"></div>
+
+          <h2>Description</h2>
+          <p id="modal-description"></p>
+
+          <p class="artist" id="modal-artist"></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
