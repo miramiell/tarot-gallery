@@ -86,8 +86,7 @@ body {
     linear-gradient(
       rgba(215,214,198,0.94),
       rgba(215,214,198,0.94)
-    ),
-    url("https://www.transparenttextures.com/patterns/old-paper.png");
+    );
 
   background-attachment: fixed;
 
