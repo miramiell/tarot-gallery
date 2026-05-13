@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,20 +9,15 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div id="intro">
+  <h1 id="intro-text">
+    In every end, there is also a beginning.
+  </h1>
+</div>
 
-    <div class="particles">
-
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </div>
+  <div id="gallery-content">
 
   <header class="top-banner">
       <h1 id="banner-title">White Noon Tarot Project 2026</h1>
@@ -99,6 +95,25 @@
 
   </div>
 
+<audio id="bgm" loop>
+  <source src="./music/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener("load", () => {
+
+  const intro =
+    document.getElementById("intro");
+
+  setTimeout(() => {
+
+    intro.classList.add("fade-out");
+
+  }, 4000);
+
+});
+</script>
+
 <script>
 const bannerTitle =
 document.getElementById("banner-title");
@@ -152,6 +167,13 @@ window.addEventListener("scroll", () => {
 
 <div class="floating-nav">
 
+<button
+  id="music-btn"
+  class="nav-circle"
+  type="button">
+  BGM
+</button>
+
   <button
     id="flip-all-btn"
     class="nav-circle"
@@ -172,5 +194,8 @@ window.addEventListener("scroll", () => {
   <script src="data.js"></script>
   <script src="script.js"></script>
 
+</div>
+
 </body>
+
 </html>

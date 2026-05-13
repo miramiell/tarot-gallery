@@ -1,3 +1,5 @@
+console.log(document.body.innerHTML);
+
 const majorGallery =
 document.getElementById("major-gallery");
 
@@ -219,3 +221,41 @@ function toggleSection(id, button) {
     icon.innerText = "−";
   }
 }
+
+const bgm =
+document.getElementById("bgm");
+
+const musicBtn =
+document.getElementById("music-btn");
+
+let musicPlaying = false;
+
+bgm.volume = 0.12;
+
+musicBtn.addEventListener("click", async () => {
+
+  if (!musicPlaying) {
+
+    try {
+
+      await bgm.play();
+
+      musicPlaying = true;
+
+      musicBtn.innerText = "Mute";
+
+    } catch (err) {
+
+      console.error(err);
+
+    }
+
+  } else {
+
+    bgm.pause();
+
+    musicPlaying = false;
+
+    musicBtn.innerText = "Music";
+  }
+});
