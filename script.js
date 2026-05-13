@@ -1,4 +1,8 @@
-const gallery = document.getElementById("gallery");
+const majorGallery =
+document.getElementById("major-gallery");
+
+const minorGallery =
+document.getElementById("minor-gallery");
 
 let currentIndex = 0;
 
@@ -8,13 +12,13 @@ cards.forEach((card, index) => {
 
   div.className = "card";
 
-div.innerHTML = `
-  <img
-    class="gallery-card"
-    loading="lazy"
-    src="${card.image}"
-    alt="${card.name}">
-`;
+  div.innerHTML = `
+    <img
+      class="gallery-card"
+      loading="lazy"
+      src="${card.image}"
+      alt="${card.name}">
+  `;
 
   div.onclick = () => {
 
@@ -23,9 +27,14 @@ div.innerHTML = `
     openModal(card);
   };
 
-  gallery.appendChild(div);
-});
+  if (card.type === "major") {
+    majorGallery.appendChild(div);
+  }
 
+  if (card.type === "minor") {
+    minorGallery.appendChild(div);
+  }
+});
 function openModal(card) {
 
   document.getElementById("modal")

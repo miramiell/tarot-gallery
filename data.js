@@ -1,6 +1,8 @@
 const cards = [
 
   {
+    type: "major",
+
     name: "The Fool",
     oc: "Blanquet Wallace",
 
@@ -26,6 +28,8 @@ const cards = [
   },
 
   {
+    type: "major",
+
     name: "The Magician",
     oc: "Orin Ziskind",
     
@@ -51,6 +55,8 @@ const cards = [
   },
 
   {
+    type: "major",
+
     name: "The High Priestess",
     oc: "Vayu Maheswari",
 
@@ -76,6 +82,8 @@ const cards = [
   },
 
   {
+    type: "major",
+
     name: "The Empress",
     oc: "Myrh Bakshi",
 
@@ -101,6 +109,8 @@ const cards = [
   },
 
   {
+    type: "major",
+
     name: "The Emperor",
     oc: "Isarius vur Yvea",
 
@@ -126,6 +136,8 @@ const cards = [
   },
 
   {
+    type: "major",
+
     name: "The Hierophant",
     oc: "Constantine",
 
@@ -148,6 +160,33 @@ const cards = [
 
     artist:
     "© yami_izumi"
+  },
+
+  {
+    type: "minor",
+    
+    name: "test",
+    oc: "test",
+
+    image: "images/card_back.png",
+
+    upright: [
+      " ",
+      " ",
+      " "
+    ],
+
+    reversal: [
+      " ",
+      " ",
+      " "
+    ],
+
+    description:
+    "lorem ipsum",
+
+    artist:
+    "© dolor sit amet"
   },
 
 ];

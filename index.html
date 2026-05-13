@@ -24,15 +24,27 @@
     </div>
 
   <header class="top-banner">
-      <h1>White Noon Tarot Project 2026</h1>
-  </header>
-  
-  <header>
-    <h1>Major Arcana</h1>
+      <h1 id="banner-title">White Noon Tarot Project 2026</h1>
   </header>
 
   <main>
-    <div id="gallery" class="gallery"></div>
+
+    <section id="major-arcana">
+      <header>
+        <h2 id="major-arcana-title">Major Arcana</h2>
+      </header>
+
+      <div id="major-gallery" class="gallery"></div>
+    </section>
+
+    <section id="minor-arcana">
+      <header>
+        <h2 id="minor-arcana-title">Minor Arcana</h2>
+      </header>
+
+      <div id="minor-gallery" class="gallery"></div>
+    </section>
+
   </main>
 
   <div id="modal" class="modal hidden">
@@ -75,6 +87,54 @@
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+
+<script>
+const bannerTitle =
+document.getElementById("banner-title");
+
+const majorArcana =
+document.getElementById("major-arcana-title");
+
+const minorArcana =
+document.getElementById("minor-arcana-title");
+
+window.addEventListener("scroll", () => {
+
+  const majorRect =
+  majorArcana.getBoundingClientRect();
+
+  const minorRect =
+  minorArcana.getBoundingClientRect();
+
+  if (minorRect.top <= 80) {
+
+    bannerTitle.textContent =
+    "Minor Arcana";
+
+  } else if (majorRect.top <= 80) {
+
+    bannerTitle.textContent =
+    "Major Arcana";
+
+  } else {
+
+    bannerTitle.textContent =
+    "White Noon Tarot Project 2026";
+  }
+});
+</script>
+
+<div class="floating-nav">
+
+  <a href="#major-arcana" class="nav-circle">
+    Major
+  </a>
+
+  <a href="#minor-arcana" class="nav-circle">
+    Minor
+  </a>
+
+</div>
 
 </body>
 </html>

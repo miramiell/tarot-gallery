@@ -11,43 +11,36 @@
   box-sizing: border-box;
 }
 
-top-banner {
+.top-banner {
   position: sticky;
   top: 0;
   z-index: 1000;
 
-  width: 100%;
-  padding: 18px 12px;
+  background: var(--panel);
 
-  background: linear-gradient(
-    to bottom,
-    var(--gold),
-    #8b8054
-  );
+  border-bottom: 1px solid rgba(159, 147, 97, 0.35);
 
-  border-bottom: 2px solid rgba(77, 71, 48, 0.25);
+  padding: 18px 24px;
 
-  box-shadow: 0 3px 12px var(--shadow);
+  backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.06),
+    0 1px 0 rgba(255,255,255,0.35) inset;
+}
+
+.top-banner h1 {
+  margin: 0;
+
+  color: var(--gold);
+
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
 
   text-align: center;
 
-  backdrop-filter: blur(4px);
-}
-
-top-banner h1 {
-  margin: 0;
-
-  color: var(--bg);
-
-  font-size: 2rem;
-  letter-spacing: 0.12em;
-  font-weight: 600;
-
-  text-transform: uppercase;
-
-  text-shadow:
-    0 1px 0 rgba(0,0,0,0.15),
-    0 2px 6px rgba(0,0,0,0.2);
+  text-shadow: none;
 }
 
 body {
@@ -369,8 +362,9 @@ header,
 }
 
 .modal {
-
-  z-index: 999;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
 }
 
 .particles {
@@ -507,10 +501,10 @@ header,
   0 15px 35px rgba(0,0,0,0.2);
 }
 
-  .modal-content {
-
-    padding: 30px;
-  }
+.modal-content {
+  position: relative;
+  z-index: 10000;
+}
 
   .prev-btn {
     left: 5px;
@@ -519,3 +513,72 @@ header,
   .next-btn {
     right: 5px;
   }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.floating-nav {
+
+  position: fixed;
+
+  right: 24px;
+  bottom: 24px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  z-index: 8000;
+}
+
+.nav-circle {
+
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  background: var(--panel);
+
+  color: var(--gold);
+
+  border:
+  1px solid rgba(159,147,97,0.35);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.12),
+    0 1px 0 rgba(255,255,255,0.35) inset;
+
+  backdrop-filter: blur(6px);
+
+  font-size: 0.9rem;
+
+  letter-spacing: 0.05em;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.nav-circle:hover {
+
+  transform: translateY(-3px);
+
+  background:
+  rgba(231,227,196,1);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.16),
+    0 1px 0 rgba(255,255,255,0.4) inset;
+}
