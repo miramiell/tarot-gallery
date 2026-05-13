@@ -63,18 +63,58 @@ header h1 {
   display: grid;
 
   grid-template-columns:
-  repeat(auto-fit, minmax(180px, 1fr));
+  repeat(5, 1fr);
 
   gap: 30px;
 
   padding: 40px;
 
-  max-width: 1500px;
+  max-width: 1400px;
 
   margin: auto;
 
   position: relative;
   z-index: 2;
+}
+
+.gallery {
+
+  max-height: calc((420px * 4) + (30px * 3));
+
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+  rgba(159,147,97,0.5)
+  transparent;
+}
+
+@media (max-width: 1200px) {
+
+  .gallery {
+
+    grid-template-columns:
+    repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+
+  .gallery {
+
+    grid-template-columns:
+    repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .gallery {
+
+    grid-template-columns:
+    repeat(2, 1fr);
+  }
 }
 
 .card {
