@@ -109,19 +109,6 @@ header h1 {
   z-index: 2;
 }
 
-.gallery {
-
-  max-height: calc((420px * 4) + (30px * 3));
-
-  overflow-y: auto;
-
-  scrollbar-width: thin;
-
-  scrollbar-color:
-  rgba(159,147,97,0.5)
-  transparent;
-}
-
 @media (max-width: 1200px) {
 
   .gallery {
