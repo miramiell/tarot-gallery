@@ -12,14 +12,27 @@ cards.forEach((card, index) => {
 
   div.className = "card";
 
-  div.innerHTML = `
-    <img
-      class="gallery-card"
-      loading="lazy"
-      src="${card.image}"
-      alt="${card.name}">
-  `;
+div.innerHTML = `
+  <div class="flip-card-inner">
 
+    <div class="flip-card-front">
+      <img
+        class="gallery-card"
+        loading="lazy"
+        src="images/card_back.png"
+        alt="Card Back">
+    </div>
+
+    <div class="flip-card-back">
+      <img
+        class="gallery-card"
+        loading="lazy"
+        src="${card.image}"
+        alt="${card.name}">
+    </div>
+
+  </div>
+`;
   div.onclick = () => {
 
     currentIndex = index;
@@ -157,3 +170,52 @@ window.addEventListener("keydown", e => {
     previousCard();
   }
 });
+
+let flippedAll = false;
+
+const flipButton =
+document.getElementById("flip-all-btn");
+
+flipButton.addEventListener("click", () => {
+
+  flippedAll = !flippedAll;
+
+  document
+  .querySelectorAll(".card")
+  .forEach(card => {
+
+    card.classList.toggle(
+      "revealed",
+      flippedAll
+    );
+  });
+
+  flipButton.innerText =
+    flippedAll
+    ? "Hide"
+    : "Flip";
+});
+
+function toggleSection(id, button) {
+
+  const section =
+  document.getElementById(id);
+
+  const icon =
+  button.querySelector(".toggle-icon");
+
+  section.classList.toggle("hidden-gallery");
+
+  if (
+    section.classList.contains(
+      "hidden-gallery"
+    )
+  ) {
+
+    icon.innerText = "+";
+
+  } else {
+
+    icon.innerText = "−";
+  }
+}

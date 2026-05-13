@@ -29,21 +29,35 @@
 
   <main>
 
-    <section id="major-arcana">
-      <header>
-        <h2 id="major-arcana-title">Major Arcana</h2>
-      </header>
+<section id="major-arcana">
 
-      <div id="major-gallery" class="gallery"></div>
-    </section>
+  <button
+    class="section-toggle"
+    onclick="toggleSection('major-gallery', this)">
 
-    <section id="minor-arcana">
-      <header>
-        <h2 id="minor-arcana-title">Minor Arcana</h2>
-      </header>
+    Major Arcana
+    <span class="toggle-icon">−</span>
 
-      <div id="minor-gallery" class="gallery"></div>
-    </section>
+  </button>
+
+  <div id="major-gallery" class="gallery"></div>
+
+</section>
+
+<section id="minor-arcana">
+
+  <button
+    class="section-toggle"
+    onclick="toggleSection('minor-gallery', this)">
+
+    Minor Arcana
+    <span class="toggle-icon">−</span>
+
+  </button>
+
+  <div id="minor-gallery" class="gallery"></div>
+
+</section>
 
   </main>
 
@@ -85,9 +99,6 @@
 
   </div>
 
-  <script src="data.js"></script>
-  <script src="script.js"></script>
-
 <script>
 const bannerTitle =
 document.getElementById("banner-title");
@@ -122,9 +133,31 @@ window.addEventListener("scroll", () => {
     "White Noon Tarot Project 2026";
   }
 });
+
+const topBanner =
+document.querySelector(".top-banner");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 80) {
+
+    topBanner.classList.add("collapsed");
+
+  } else {
+
+    topBanner.classList.remove("collapsed");
+  }
+});
 </script>
 
 <div class="floating-nav">
+
+  <button
+    id="flip-all-btn"
+    class="nav-circle"
+    type="button">
+    Flip
+  </button>
 
   <a href="#major-arcana" class="nav-circle">
     Major
@@ -135,6 +168,9 @@ window.addEventListener("scroll", () => {
   </a>
 
 </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
