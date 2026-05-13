@@ -533,7 +533,7 @@ const cards = [
     ],
 
     description:
-    " ",
+    "The Sun, full of warmth, joy, and excitement upon a new day. Dancing frivolously under the golden source of warmth with sunflower petals raining into her hair, a bright smile and laughter without a care in the world. The Sun represents the source of life and the dawn that follows after dusk. A symbol of child-like innocence and careless happiness, but once reversed, the flowers wilts and the smile drops.",
 
     artist:
     "© cartooncg"
