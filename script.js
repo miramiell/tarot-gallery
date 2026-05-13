@@ -19,7 +19,7 @@ div.innerHTML = `
       <img
         class="gallery-card"
         loading="lazy"
-        src="images/card_back.png"
+        src="images/card_back.webp"
         alt="Card Back">
     </div>
 
