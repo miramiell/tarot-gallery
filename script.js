@@ -58,8 +58,11 @@ function openModal(card) {
   document.getElementById("modal-card-image").src =
   card.image;
 
-  document.getElementById("modal-title").innerText =
-  `${card.name}, ${card.oc}`;
+document.getElementById("modal-card-name").innerText =
+card.name;
+
+document.getElementById("modal-oc-name").innerText =
+card.oc;
 
   document.getElementById("modal-description").innerText =
   card.description;
