@@ -578,19 +578,19 @@ const cards = [
     image: "images/21_the_world.webp",
 
     upright: [
-      " ",
-      " ",
-      " "
+      "Completion",
+      "Fulfilment",
+      "Sense of Belonging"
     ],
 
     reversal: [
-      " ",
-      " ",
-      " "
+      "Emptiness",
+      "Difficulty Finding Closure",
+      "Inner Turmoil"
     ],
 
     description:
-    " ",
+    "The final card, representing the completion of a cycle, often after achieving fulfilment. The world is about completion, contentment, wholeness— not just in what you've done, but in who you've become. You've grown. You've healed. You've seen life and learned from it, found a place to belong and flourished along with it. And now, you're ready to begin again, older and wiser. You're not ending. You're experiencing anew."
 
     artist:
     "© yxyue"
