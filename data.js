@@ -63,19 +63,19 @@ const cards = [
     image: "images/02_the_high_priestess.webp",
 
     upright: [
-      " ",
-      " ",
-      " "
+      "Intuition",
+      "Mystery",
+      "Spirituality"
     ],
 
     reversal: [
-      " ",
-      " ",
-      " "
+      "Confusion",
+      "Hidden Motives",
+      "Superficiality"
     ],
 
     description:
-    " ",
+    "'Though the world above stretches vast and endless, the universe beneath her runs just as deep.' The priestess sits before the water, her elusive expression balanced between contemplation and a quiet smile. Blooming flowers can only be seen within the mirrored depths, and lanterns reveal their hearts of pearl. This card invites you to take a moment, to acknowledge the duality of all things, and listen to your intuition.",
 
     artist:
     "© spacepolarbear"
@@ -334,18 +334,18 @@ const cards = [
 
     upright: [
       "Sacrifice",
-      "Waiting",
-      "Uncertainty"
+      "Letting Go",
+      "Contemplation"
     ],
 
     reversal: [
-      "Stalling",
-      "Disinterest",
-      "Apathy"
+      "Apathy",
+      "Indecision",
+      "Stalling"
     ],
 
     description:
-    " ",
+    "A man is suspended upside down, held by a rope bound to his ankles. He carries a gentle expression while the dandelion dearly-held in his hands disperses its seeds into the wind, along with the wisps of hair swept from his face. The hanging man’s serene and soft composure indicate this predicament may have been of his own doing. Behind him is a dandelion once more, radiant as a halo.",
 
     artist:
     "© accyber"
