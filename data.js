@@ -102,7 +102,7 @@ const cards = [
     ],
 
     description:
-    " ",
+    "The Empress, a protector fostering growth, offers gentle comfort, and builds an environment where others thrive. The glittering crown is strength not from dominance but unconditional compassion and love. In reverse, it may mean that you've given too much of yourself, becoming drained, overprotective, controlling— all while neglecting oneself. Repressed and disconnected from vulnerability. His presence may mean the need to restore balance and nurture oneself.",
 
     artist:
     "© daylightprint"
